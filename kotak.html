@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pinkéa Berry Beauty | Kontak Kami</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        :root {
+            --pink-primary: #FF8E9E;
+            --pink-secondary: #FFD1D7;
+            --pink-dark: #D85C6D;
+            --light-bg: #FFF5F6;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light-bg);
+            color: #e0346a;
+        }
+        .bg-pink-nav {
+            background-color: #ffffff;
+            border-bottom: 2px solid var(--pink-secondary);
+        }
+        .btn-pink {
+            background-color: var(--pink-primary);
+            color: white;
+            border-radius: 20px;
+            transition: all 0.3s;
+        }
+        .btn-pink:hover {
+            background-color: var(--pink-dark);
+            color: white;
+        }
+        .contact-header {
+            background: linear-gradient(135deg, var(--pink-secondary) 0%, #FFF5F6 100%);
+            padding: 60px 0;
+            text-align: center;
+        }
+        .contact-card {
+            background-color: #ffffff;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(255, 142, 158, 0.12);
+        }
+        .icon-box {
+            width: 50px;
+            height: 50px;
+            background-color: var(--light-bg);
+            color: var(--pink-dark);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+        .form-control:focus {
+            border-color: var(--pink-primary);
+            box-shadow: 0 0 0 0.25px rgba(255, 142, 158, 0.5);
+        }
+        footer {
+            background-color: #e0346a;
+            color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-pink-nav sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html" style="color: var(--pink-dark);">
+                <i class="bi bi-sparkles"> Pinkéa Berry Beauty</i> 
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item"><a class="nav-link text-dark" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="tentang.html">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="katalog.html">Katalog</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="bayar.html">Bayar</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-semibold" href="kontak.html" style="color: var(--pink-dark);">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="contact-header mb-5">
+            <div class="container">
+                <h1 class="fw-bold text-dark">Hubungi Kami</h1>
+                <p class="text-muted">Punya pertanyaan seputar produk? Kami siap mendengarmu.</p>
+            </div>
+        </section>
+
+        <section class="container my-5">
+            <div class="row g-4">
+                <div class="col-md-5">
+                    <div class="card contact-card p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <h4 class="fw-bold mb-4" style="color: var(--pink-dark);">Info Kontak</h4>
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="icon-box me-3 shadow-sm"><i class="bi bi-geo-alt"></i></div>
+                                <div>
+                                    <h6 class="fw-bold mb-0">Alamat Toko</h6>
+                                    <p class="text-muted small mb-0">Jl. Cantik Jelita No. 19, Jakarta</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="icon-box me-3 shadow-sm"><i class="bi bi-whatsapp"></i></div>
+                                <div>
+                                    <h6 class="fw-bold mb-0">WhatsApp CS</h6>
+                                    <p class="text-muted small mb-0">+62 812-3456-7890</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-3 rounded-3" style="background-color: var(--light-bg);">
+                            <h6 class="fw-bold mb-1" style="color: var(--pink-dark);"><i class="bi bi-clock"></i> Jam Operasional</h6>
+                            <p class="small mb-0 text-muted">Senin - Sabtu: 09.00 - 18.00 WIB</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-7">
+                    <div class="card contact-card p-4 p-md-5 h-100">
+                        <h4 class="fw-bold mb-4" style="color: var(--pink-dark);"><i class="bi bi-chat-heart"></i> Kirim Pesan</h4>
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label for="namaKontak" class="form-label fw-semibold">Nama Anda</label>
+                                <input type="text" class="form-control" id="namaKontak" placeholder="Masukkan nama Anda" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="emailKontak" class="form-label fw-semibold">Alamat Email</label>
+                                <input type="email" class="form-control" id="emailKontak" placeholder="nama@email.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="pesanKontak" class="form-label fw-semibold">Isi Pesan</label>
+                                <textarea class="form-control" id="pesanKontak" rows="4" placeholder="Tuliskan pesan Anda..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-pink w-100 btn-lg mt-2 shadow-sm">Kirim Pesan <i class="bi bi-send"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-4 mt-5">
+        <div class="container text-center">
+            <h5 class="fw-bold mb-2" style="color: var(--pink-primary);"><i class="bi bi-sparkles"></i>  Pinkéa Berry Beauty</h5>
+            <p class="small text-muted mb-3">Tugas Projek UAS TIK - © 2026</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const nama = document.getElementById('namaKontak').value;
+            alert(`Terima kasih, ${nama}! ✨\nPesan Anda telah berhasil dikirim.`);
+            this.reset();
+        });
+    </script>
+</body>
+</html>

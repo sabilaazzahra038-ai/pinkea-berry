@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinkéa Berry Beauty | Beranda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <style>
+        :root {
+            --pink-primary: #FF8E9E;
+            --pink-secondary: #FFD1D7;
+            --pink-dark: #D85C6D;
+            --light-bg: #FFF5F6;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light-bg);
+            color: #e0346a;
+        }
+        
+        /* Kustom Scrollbar Tema Pink */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--light-bg);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--pink-secondary);
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--pink-primary);
+        }
+
+        .bg-pink-nav {
+            background-color: #ffffff;
+            border-bottom: 2px solid var(--pink-secondary);
+        }
+        .nav-link.active-pink {
+            color: var(--pink-dark) !important;
+            font-weight: 600;
+        }
+        /* Efek hover link navigasi menjadi pink */
+        .nav-link:hover {
+            color: var(--pink-primary) !important;
+        }
+        .btn-pink {
+            background-color: var(--pink-primary);
+            color: white;
+            border-radius: 20px;
+            transition: all 0.3s ease-in-out;
+        }
+        .btn-pink:hover {
+            background-color: var(--pink-dark);
+            color: white;
+            box-shadow: 0 4px 15px rgba(216, 92, 109, 0.4);
+            transform: translateY(-2px);
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #FFF5F6 0%, var(--pink-secondary) 100%);
+            padding: 80px 0;
+        }
+        .card-product {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(255, 142, 158, 0.15);
+            transition: all 0.3s ease-in-out;
+        }
+        /* Efek Glow Pink pada kartu produk saat di-hover */
+        .card-product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(255, 142, 158, 0.35);
+        }
+        footer {
+            background-color: #e0346a;
+            color: #f8f9fa;
+        }
+        /* Efek pink pada icon sosmed di footer */
+        footer a i {
+            transition: color 0.3s;
+        }
+        footer a:hover i {
+            color: var(--pink-primary) !important;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-pink-nav sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html" style="color: var(--pink-dark);">
+                <i class="bi bi-sparkles"></i> Pinkéa Berry Beauty
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item"><a class="nav-link active-pink" aria-current="page" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="tentang.html">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="katalog.html">Katalog</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="bayar.html">Bayar</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="kontak.html">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <div class="col-md-6 text-center text-md-start">
+                        <span class="badge bg-white text-danger mb-2 px-3 py-2 rounded-pill shadow-sm">New Collection 2026</span>
+                        <h1 class="display-5 fw-bold lh-base" style="color: #4A4A4A;">Pancarkan Cantik Alamimu Bersama <span style="color: var(--pink-dark);">Pinkéa Berry</span></h1>
+                        <p class="lead my-4 text-muted">Temukan produk make-up berkualitas tinggi yang aman, bersertifikasi, dan bikin kamu makin percaya diri setiap hari.</p>
+                        <a href="katalog.html" class="btn btn-pink btn-lg px-4 shadow">Belanja Sekarang <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img src="Base Kylie Jenner.jpeg" alt="Make Up Hero" class="img-fluid rounded-4 shadow">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">Produk Terlaris ✨</h2>
+                    <p class="text-muted">Paling banyak dicari minggu ini</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-6 col-md-3">
+                        <div class="card card-product h-100">
+                            <img src="Rhode Peptide Lip Tints.jpeg" class="card-img-top rounded-top-4" alt="Lipstick">
+                            <div class="card-body p-3 d-flex flex-column justify-content-between">
+                                <div>
+                                    <h6 class="card-title fw-bold mb-1">Velvet Matte Lipstick</h6>
+                                    <p class="text-muted small mb-2">Shade 03 Rose Pink</p>
+                                </div>
+                                <div>
+                                    <p class="fw-bold text-danger mb-2">Rp 85.000</p>
+                                    <a href="bayar.html" class="btn btn-pink btn-sm w-100"><i class="bi bi-cart-plus"></i> Beli</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-6 col-md-3">
+                        <div class="card card-product h-100">
+                            <img src="mascara rare beauty.jpeg" class="card-img-top rounded-top-4" alt="Cushion">
+                            <div class="card-body px-3 d-flex flex-column justify-content-between">
+                                <div>
+                                    <h6 class="card-title fw-bold mb-1">RARE Beauty Mascara</h6>
+                                    <p class="text-muted small mb-2">Waterproof Black</p>
+                                </div>
+                                <div>
+                                    <p class="fw-bold text-danger mb-2">Rp 150.000</p>
+                                    <a href="bayar.html" class="btn btn-pink btn-sm w-100"><i class="bi bi-cart-plus"></i> Beli</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <div class="card card-product h-100">
+                            <img src="cusion tir tir.jpeg" class="card-img-top rounded-top-4" alt="Mascara">
+                            <div class="card-body p-3 d-flex flex-column justify-content-between">
+                                <div>
+                                    <h6 class="card-title fw-bold mb-1">Flawless Cushion TIR-TIR</h6>
+                                    <p class="text-muted small mb-2">shade natural</p>
+                                </div>
+                                <div>
+                                    <p class="fw-bold text-danger mb-2">Rp 95.000</p>
+                                    <a href="bayar.html" class="btn btn-pink btn-sm w-100"><i class="bi bi-cart-plus"></i> Beli</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <div class="card card-product h-100">
+                            <img src="huda beauty.jpeg" class="card-img-top rounded-top-4" alt="Blush On">
+                            <div class="card-body p-3 d-flex flex-column justify-content-between">
+                                <div>
+                                    <h6 class="card-title fw-bold mb-1">Cheeky Glow Blush</h6>
+                                    <p class="text-muted small mb-2">Shade Peach Pink</p>
+                                </div>
+                                <div>
+                                    <p class="fw-bold text-danger mb-2">Rp 75.000</p>
+                                    <a href="bayar.html" class="btn btn-pink btn-sm w-100"><i class="bi bi-cart-plus"></i> Beli</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-4 mt-5">
+        <div class="container text-center">
+            <h5 class="fw-bold mb-2" style="color: var(--pink-primary);"><i class="bi bi-sparkles"></i> Pinkéa Berry Beauty</h5>
+            <p class="small text-muted mb-3">Tugas Projek UAS TIK - © 2026</p>
+            <div class="d-flex justify-content-center gap-3 fs-5 mb-3">
+                <a href="#" class="text-white-50"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white-50"><i class="bi bi-tiktok"></i></a>
+                <a href="#" class="text-white-50"><i class="bi bi-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
